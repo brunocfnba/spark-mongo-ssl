@@ -21,7 +21,7 @@ keytool -import -file <the mongo certificate file> -alias <any alias> -keystore 
 
 With the generated file run the following spark-submit command:
 ```
-spark-submit --master local[2] --packages org.mongodb.spark:mongo-spark-connector_2.11:2.2.0 --driver-java-options -Djavax.net.ssl.trustStore=<truststore file name> --conf spark.executor.extraJavaOptions=--Djavax.net.ssl.trustStore=<trsutstore file name> mongo_spark.py
+spark-submit --master local[2] --packages org.mongodb.spark:mongo-spark-connector_2.11:2.2.0 --driver-java-options -Djavax.net.ssl.trustStore=<truststore file name> --conf spark.executor.extraJavaOptions=--Djavax.net.ssl.trustStore=<truststore file name> mongo_spark.py
 ```
 
 
