@@ -11,7 +11,7 @@ spark-submit --master local[2] --packages org.mongodb.spark:mongo-spark-connecto
 ```
 For the examples, I'm using a local master but you can run in any Spark cluster you may be working on.
 
-####Connecting to MongoDB over SSL
+#### Connecting to MongoDB over SSL
 
 Before submitting a Spark job connecting to a MongoDB using SSL, first you need to get your database certificate (usually a file called something.cert) and save to the machine where you are running the Spark job (the Spark driver) then generate a truststore file using the MongoDB certificate as follows:
 ```
